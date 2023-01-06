@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+       
+     <link rel="stylesheet" href="index.css"> 
+
+
+
+</head> 
+<body>
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>FILL</span> FORM </h1>
+
+    <div class="row">
+        
+        <form action="Tform.php" method="post">
+
+            <div class="inputBox">
+                <label for="Name"><h1>Name</h1></label>
+                <input type="text" placeholder="name" name="Name"maxlength="32" pattern="[A-Za-z""]{1,32}" /><br>
+            </div>
+            <div class="inputBox">
+                <label for="Email"><h1>Email</h1></label>
+                <input type="email" placeholder="email" name="Email"><br>
+            </div>
+
+            <div class="inputBox">
+                <label for="Name"><h1>Mobile</h1></label>
+                <input type="number" placeholder="Mobile number" name="Mobile"><br>
+            </div>
+            <div class="inputBox">
+                <label for="Address"><h1>Address</h1></label>
+                <input type="text" placeholder="Address" name="Address"><br>
+            </div>
+            <div class="inputbox"> 
+                <label for="select-session"><h1>Session</h1></label> 
+               
+             <div>
+                <div class="inputBox">
+                    
+                  </div>
+                  <label for="Green Yatra" class="radio-inline"><input type="radio" name="session" value="gy" id="Green Yatra">Green Yatra</label><br><br>                 
+                  <label for="Sankalp Taru" class="radio-inline"><input type="radio" name="session" value="st" id="Sankalp Taru">Sankalp Taru</label><br><br>
+                  <label for="Say tress" class="radio-inline"><input type="radio" name="session" value="ts" id="Say tress">Say tress</label><br><br>
+                  <label for="SIRUTHULI" class="radio-inline"><input type="radio" name="session" value="s" id="SIRUTHULI">SIRUTHULI</label><br><br>
+                  <label for="Plant a life" class="radio-inline"><input type="radio" name="session" value="p" id="Plant a life">Plant a life</label><br>
+                 </div>
+                <div class="inputBox">
+            <h1><label for="Any suggestions for us">Any suggestions for us</label></h1>      
+            <textarea placeholder="Any suggesions for us" name="suggestion" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="SUBMIT" class="btn">
+            <center>
+                <button type="submit" style="color:red;font-size:20px;"><b></b>
+                  <a href="tree.html">BACK</a>
+                
+                </button>
+              </center>
+            
+
+        </form>
+
+    </div>
+
+</section>
+</body>
+</html>

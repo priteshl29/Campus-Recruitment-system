@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        
+               
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+               
+             <link rel="stylesheet" href="index.css">
+        
+        
+        
+        </head> 
+        <body>
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>DETAILS</span> FOR DONATION </h1>
+
+    <div class="row">
+        
+       
+
+        <form action="Cform.php" method="post">
+
+            <div class="inputBox">
+                <label for="Name"><h1>Name</h1></label>
+                <input type="text" placeholder="name" name="Name" maxlength="32" pattern="[A-Za-z""]{1,32}"><br>
+                </div>
+             <div class="inputBox">
+                <label for="Email"><h1>Email</h1></label>
+                <input type="email" placeholder="email" name="Email"><br>
+            </div>
+
+            <div class="inputBox">
+                <label for="Mobile"><h1>Mobile</h1></label>
+                <input type="Mobile" placeholder=" Mobile" name="Mobile"><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Pickupp"><h1>Pickupp</h1></label>
+                <input type="text" placeholder="Pickupp" name="Pickupp"><br>
+            </div>
+            <div class="inputBox">
+                <h1>Select pickup day</h1>
+            <label for="Monday" class="radio-inline"><input type="radio" name="Pickupday" value="m" id="Monday">Monday</label><br><br>
+                  <label for="Tuesday" class="radio-inline"><input type="radio" name="Pickupday" value="t" id="Tuesday">Tuesday</label><br><br>
+                  <label for="Wednesday" class="radio-inline"><input type="radio" name="Pickupday" value="w" id="Wednesday">Wednesday</label><br><br>                  <label for="Thursday" class="radio-inline"><input type="radio" name="Pickupday" value="th" id="Thursday">Thursday</label><br>
+                  <label for="Friday" class="radio-inline"><input type="radio" name="Pickupday" value="f" id="Friday">Friday</label><br><br>
+                  <label for="Saturday" class="radio-inline"><input type="radio" name="Pickupday" value="s" id="Saturday">Saturday</label><br><br>
+                  </div>
+             <div class="inputBox"> 
+                 <h1>Select time range</h1>
+                <label for="9-12" class="radio-inline"><input type="radio" name="timerange" value="9-12" id="9-12">9-12</label><br>
+                <label for="12-3" class="radio-inline"><input type="radio" name="timerange" value="12-3" id="12-3">12-3</label><br>
+                 <label for="3-6" class="radio-inline"><input type="radio" name="timerange" value="3-6" id=3-6">3-6</label><br>
+                 <label for="6-8" class="radio-inline"><input type="radio" name="timerange" value="6-8" id="6-8">6-8</label><br>
+             </div>
+
+
+            
+                   <div class="inputBox">
+                       <h1>Select type of donation</h1>
+                    <label for="Books" class="radio-inline"><input type="radio" name="type" value="b" id="Books">books</label><br>
+                    <label for="Clothes" class="radio-inline"><input type="radio" name="type" value="c" id="Clothes">clothes</label><br>
+                     <label for="Food" class="radio-inline"><input type="radio" name="type" value="f" id="Food">Food</label><br>
+                     <label for="Money" class="radio-inline"><input type="radio" name="type" value="m" id="Money">Money</label><br>
+                     <label for="Shoes" class="radio-inline"><input type="radio" name="type" value="s" id="Shoes">Shoes</label><br>
+                     <label for="Toys" class="radio-inline"><input type="radio" name="type" value="t" id="Toys">Toys</label><br>
+                   </div>
+                   <div class="inputBox">
+                    <label for="information"><h1>Any Information</h1></label>
+            <textarea placeholder=" Information" name="information" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="SUBMIT" class="btn">
+            <center>
+                <button type="submit" style="color:red;font-size:20px;"><b></b>
+                  <a href="charity.html">BACK</a>
+                
+                </button>
+              </center>
+            
+            
+
+        </form>
+
+    </div>
+    
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+       
+     <link rel="stylesheet" href="index.css"> 
+
+
+
+</head> 
+<body>
+    
+    
+
+ 
+
+ <section class="order" id="order">
+
+    <h1 class="heading"> <span>FILL</span> FORM </h1>
+
+    <div class="row">
+        
+       
+
+
+        <form action="order.php" method="post">
+
+            <div class="inputBox">
+                
+                 <label for="Name"><h1>Name</h1></label> 
+                <input type="text" placeholder="Name" name="Name" maxlength="32" pattern="[A-Za-z""]{1,32}"><br>
+        
+            </div>
+            <div class="inputBox">
+            <label for="Email"><h1>Email</h1></label> 
+                <input type="Email" placeholder="Email" name="Email"><br><br>
+            </div>
+
+            <div class="inputBox">
+                <label for="Mobile"><h1>Mobile</h1></label> 
+                <input type="Mobile" placeholder="Mobile" name="Mobile"><br><br>
+             </div>
+             <div class="inputBox">
+                <label for="Address"><h1>Address</h1></label> 
+                <input type="Address" placeholder="Address" name="Address"><br><br>
+             </div>
+             <div class="inputBox">
+                <label for="Location"><h1>Location</h1></label>   
+                <input type="text" placeholder="Location where trash is" name="Location"><br>
+            </div>
+            <div class="inputbox">
+                <!-- <div class="form-group"> -->
+            <!-- <label>Select the size of waste</label> -->
+            <!-- <select name="size" class="form-control" required> 
+                <option value="">Select size</option>
+                <option value="TRUCK">TRUCK</option>
+                <option value="CAR">CAR</option>
+                <option value="BAG">BAG</option>
+                 </select>
+                 <br><br>
+              <div> -->
+                  <h1>Select Size</h1>
+                <label for="Truck" class="radio-inline"><input type="radio" name="Size" value="t" id="Truck">Truck</label><br>
+                <label for="Car" class="radio-inline"><input type="radio" name="Size" value="c" id="Car">Car</label><br>
+                <label for="Bag" class="radio-inline"><input type="radio" name="Size" value="b" id="Bag">Bag</label><br>
+            </div><br><br>
+            <div class="inputbox">
+
+                
+              <label><h1>Upload image</h1></label>
+              <input type="file" name="image" accept=".doc,.docx,.pdf"><br>
+               </div>
+               <div class="inputbox">
+
+            <label><h1>Additional Information</h1></label>
+            <textarea placeholder="Additional Information" name="" id="" cols="30" rows="10" name="Information"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn">
+            <center>
+                <button type="submit" style="color:red;font-size:20px;"><b></b>
+                  <a href="index.html">BACK</a>
+                
+                </button>
+              </center>
+            
+
+        </form>
+
+    </div>
+
+</section>
+</body>
+</html>  

@@ -1,0 +1,93 @@
+< ?php
+include_once('mail.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrickuWeb</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/website.css">
+</head>
+
+<body>
+
+
+  <div class="container mt-5 mycareer">
+    <div class="row">
+      <div class="col-md-8" style="margin:0 auto; float:none;">
+        <h3 align="center">DETAILS FOR DONATION</h3>
+        <br />
+        <h4 align="center">Please fill this form</h4><br />
+                <form method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Enter Name</label>
+                <input type="text" name="name" placeholder="Enter Name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label>Pickup location</label>
+                <textarea name="address" placeholder="Pickup from" class="form-control" required></textarea>
+              </div>
+		<div class="form-group">
+                <label>Day for pickup</label>
+                <textarea name="address" placeholder="Pickup day" class="form-control" required></textarea>
+              </div>
+              <div class="form-group">
+                <label>Enter Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter Email Address" required />
+              </div>
+              <div class="form-group">
+                <label>Select the donation type</label>
+                <select name="skills[]" class="form-control" multiple  style="height:150px;" required>
+                  <option value="Clothes">Clothes</option>
+                  <option value="Toys">Toys</option>
+                  <option value="Books">Books</option>
+                  <option value="Shoes">Shoes</option>
+                  <option value="Money">Money</option>
+                  <option value="Food">Food</option>
+                  <option value="Unused items">Unused items</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Prefered time of collection</label>
+                <select name="time" class="form-control" required>
+                  <option value="">Select time range</option>
+                  <option value="9am-12pm">9am-12pm</option>
+                  <option value="12pm-3pm">12pm-3pm</option>
+                  <option value="3pm-6pm">3pm-6pm</option>
+		  <option value="6pm-8pm">6pm-8pm</option>
+                  
+                </select>
+<br><br><br><br>
+              </div>
+              <div class="form-group">
+                <label>Enter Mobile Number</label>
+                <input type="text" name="mobile" placeholder="Enter Mobile Number" class="form-control" pattern="\d*" required />
+              </div>
+              
+                <label>Enter Additional Information</label>
+                <textarea name="additional_information" placeholder="Enter Additional Information" class="form-control" required rows="8"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" align="center">
+            <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-success" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
